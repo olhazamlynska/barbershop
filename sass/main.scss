@@ -1,0 +1,19 @@
+@import './utils/variables';
+@import './base/reset';
+@import './base/common';
+@import './utils/hidden';
+
+@import './components/container';
+@import './components/btn';
+@import './components/title';
+@import './components/top-text';
+
+@import './layout/header';
+@import './layout/hero';
+@import './layout/us';
+@import './layout/prices';
+@import './layout/benefits';
+@import './layout/masters';
+@import './layout/jobs';
+@import './layout/info';
+@import './layout/footer';

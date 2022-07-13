@@ -1,0 +1,17 @@
+.jobs {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.jobs__top-text {
+  margin-bottom: 44px;
+}
+
+.jobs__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.jobs__item + .jobs__item {
+  margin-left: 30px;
+}

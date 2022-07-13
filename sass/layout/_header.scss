@@ -1,0 +1,69 @@
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  width: 100%;
+  position: absolute;
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+}
+.header__logo {
+  display: flex;
+  margin-right: 65px;
+}
+
+.header__list {
+  display: flex;
+}
+
+.header__item {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  color: var(--first-text-color);
+}
+.header__item:not(:last-child) {
+  margin-right: 25px;
+}
+.header__link {
+  color: inherit;
+  width: 100%;
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.header__link:hover,
+.header__link:focus,
+.header-soc__tell:hover,
+.header-soc__tell:focus {
+  color: var(--accent);
+}
+.header-soc {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  margin-left: auto;
+}
+.header-soc__item {
+  color: var(--first-text-color);
+}
+.header-soc__item:not(:last-child) {
+  margin-right: 65px;
+}
+.header-soc__tell {
+  color: inherit;
+  width: 100%;
+  transition: color var(--transition-duration) var(--transition-timing-function);
+}
+
+.header__btn {
+  color: inherit;
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
+}
+.header__btn:hover,
+.header__btn:focus {
+  background-color: var(--main-btn-color);
+}

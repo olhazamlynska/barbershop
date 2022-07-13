@@ -1,0 +1,21 @@
+.top-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: calc(15 / 11);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--second-top-text-color);
+}
+.top-text::before {
+  content: ' ';
+  height: 1px;
+  width: 63px;
+  background-color: currentColor;
+  margin-right: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

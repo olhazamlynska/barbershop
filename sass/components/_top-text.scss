@@ -2,20 +2,28 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: calc(15 / 11);
+
+  @include font(11px, 600, 1.91);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--second-top-text-color);
+
+  @media screen and (min-width: 768px) {
+    @include font(null, null, 1.36);
+  }
+  &--light {
+    color: rgba(157, 164, 189, 0.6);
+  }
+
+  &--dark {
+    color: #303030;
+  }
 }
 .top-text::before {
   content: ' ';
   height: 1px;
-  width: 63px;
+  width: 60px;
   background-color: currentColor;
-  margin-right: 21px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-right: 20px;
+  flex-shrink: 0;
 }

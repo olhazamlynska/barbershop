@@ -1,41 +1,80 @@
 .masters {
-  padding-top: 130px;
-  padding-bottom: 130px;
   background-color: #f7f7f7;
+  padding-top: 84px;
+  padding-bottom: 84px;
+
+  @include tablet {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include desktop {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+}
+.masters .container {
+  display: flex;
+  flex-direction: column;
 }
 .masters__top-text {
   margin-bottom: 20px;
+  text-align: center;
+  @include desktop {
+    text-align: left;
+  }
 }
+.masters__subtitle {
+  margin-top: 30px;
+  margin-bottom: 8px;
 
+  @include font(18px, 400, 1.38);
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
 .masters__title {
   margin-bottom: 44px;
-  text-align: left;
+  text-align: center;
+
+  @include desktop {
+    text-align: left;
+  }
 }
 
 .masters__list {
   display: flex;
-  justify-content: space-between;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 64px;
+  @include desktop {
+    gap: 30px;
+  }
+  @include desktop {
+    flex-direction: row;
+    gap: 30px;
+  }
 }
 
 .masters__item {
+  width: 100%;
+
+  @include desktop {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
-.masters__item + .masters__item {
-  margin-left: 30px;
-}
+
 .masters__img {
   margin-bottom: 30px;
 }
 .masters__subtitle {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: calc(25 / 18);
+  @include font(18px, 400, 1.38);
 
   text-align: center;
   letter-spacing: 0.02em;
 }
 .masters__job {
-  font-size: 14px;
-  line-height: calc(19 / 14);
+  @include font(14px, null, 1.36);
 
   text-align: center;
   letter-spacing: 0.02em;
@@ -52,17 +91,18 @@
   height: 44px;
   background-color: var(--main-BG-color);
   border-radius: 50%;
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
 }
-.masters-soc__item + .masters-soc__item {
-  margin-left: 10px;
-}
+
 .masters-soc__link {
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include centered-flex();
   color: var(--third-text-color);
+
   transition: color var(--transition-duration) var(--transition-timing-function);
 }
 .masters-soc__link:hover,

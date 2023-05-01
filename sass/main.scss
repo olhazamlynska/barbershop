@@ -2,11 +2,13 @@
 @import './base/reset';
 @import './base/common';
 @import './utils/hidden';
+@import './utils/mixins';
 
 @import './components/container';
 @import './components/btn';
 @import './components/title';
 @import './components/top-text';
+@import './components/modal';
 
 @import './layout/header';
 @import './layout/hero';
@@ -16,4 +18,5 @@
 @import './layout/masters';
 @import './layout/jobs';
 @import './layout/info';
+@import './layout/address';
 @import './layout/footer';

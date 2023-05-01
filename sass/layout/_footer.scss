@@ -2,6 +2,15 @@
   display: flex;
   padding-top: 55px;
   padding-bottom: 55px;
+
+  @media screen and (max-width: 479px) {
+    flex-direction: column-reverse;
+  }
+
+  @include tablet {
+    height: auto;
+    align-items: center;
+  }
 }
 .footer__copy {
   font-style: normal;
@@ -11,6 +20,14 @@
   letter-spacing: 0.2em;
 
   color: var(--second-text-color);
+
+  @media screen and (max-width: 479px) {
+    align-self: flex-start;
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    align-self: flex-end;
+  }
 }
 .footer__list {
   display: flex;
@@ -21,6 +38,9 @@
   font-size: 11px;
   line-height: calc(15 / 11);
   letter-spacing: 0.2em;
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    align-self: flex-start;
+  }
 }
 .footer__list::before {
   content: ' ';

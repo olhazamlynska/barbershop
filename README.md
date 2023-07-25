@@ -47,9 +47,9 @@ online appointment.
 
 👤 **Olya Zamlynska**
 
-- Email: [olyazamlynska@gmail.com](mailto:olyazamlynska@gmail.com)
+- Email: [olyazamlynska@gmail.com](mailto:olhazamlynska@gmail.com)
 - GitHub: [@olhazamlynska](https://github.com/olhazamlynska)
-- Twitter: [@olhazamlynska](https://twitter.com/olyazamlynska)
+- Twitter: [@olhazamlynska](https://twitter.com/olhazamlynska)
 - LinkedIn: [OlhaZamlynska](https://www.linkedin.com/in/olhazamlynska)
 
 ## Contact Information <a name="contact-information"></a>
